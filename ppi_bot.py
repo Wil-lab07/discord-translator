@@ -61,7 +61,7 @@ flag_emoji_dict = {
 
 #For a more secure, we loaded the .env file and assign the token value to a variable 
 load_dotenv(".env")
-TOKEN = 'MTEzMjg4NzEwMjUwMjIxMTY1Nw.GUcqYE.sd06geDIfPZgYzvQPsRHMzBWMu3VN1O5IH5K_Y'
+TOKEN = os.getenv("TOKEN")
 
 #Intents are permissions for the bot that are enabled based on the features necessary to run the bot.
 intents=discord.Intents.all()
